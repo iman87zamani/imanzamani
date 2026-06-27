@@ -1,4 +1,5 @@
-﻿import { Navigation } from "@/components/layout/Navigation";
+﻿import { ThoughtLeadership } from "@/components/sections/ThoughtLeadership";
+import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { PageOrchestrator } from "@/components/sections/PageOrchestrator";
 import { BoardBrief } from "@/components/sections/BoardBrief";
@@ -33,4 +34,5 @@ export default function Home() {
     </>
   );
 }
+
 
