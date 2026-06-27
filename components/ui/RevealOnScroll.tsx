@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 interface RevealOnScrollProps {
-  children: React.ReactNode;
+  children: React.ReactNode;`n  role?: string;`n  "aria-label"?: string;
   className?: string;
   style?: React.CSSProperties;
   delay?: number;
@@ -44,3 +44,4 @@ export function RevealOnScroll({
     </motion.div>
   );
 }
+

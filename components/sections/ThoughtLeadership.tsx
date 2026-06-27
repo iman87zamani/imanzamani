@@ -60,7 +60,7 @@ export function ThoughtLeadership() {
         </div>
 
         {/* Filter bar */}
-        <RevealOnScroll className="flex flex-wrap gap-2 mb-12" role="group" aria-label="Filter articles">
+        <div className="flex flex-wrap gap-2 mb-12" role="group" aria-label="Filter articles">
           {FILTERS.map(f => (
             <button
               key={f}
@@ -256,3 +256,5 @@ export function ThoughtLeadership() {
     </section>
   );
 }
+
+
