@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,7 +10,7 @@ import { SITE_CONFIG, COMMAND_SECTIONS } from "@/lib/constants";
 const ICON_MAP: Record<string, React.ReactNode> = {
   "Send an Email":    <Mail size={13} />,
   "LinkedIn Profile": <Linkedin size={13} />,
-  "Download Résumé":  <FileText size={13} />,
+  "Download RÃ©sumÃ©":  <FileText size={13} />,
 };
 
 export function CommandMenu() {
@@ -27,7 +27,7 @@ export function CommandMenu() {
     }
   }, [open]);
 
-  const allItems = COMMAND_SECTIONS.flatMap(g => g.items);
+  const allItems = COMMAND_SECTIONS.flatMap(g => g.items as unknown as {label: string; href: string}[]);
   const filtered = query
     ? allItems.filter(i => i.label.toLowerCase().includes(query.toLowerCase()))
     : allItems;
@@ -100,7 +100,7 @@ export function CommandMenu() {
                   type="text"
                   value={query}
                   onChange={e => { setQuery(e.target.value); setSelectedIndex(0); }}
-                  placeholder="Search commands…"
+                  placeholder="Search commandsâ€¦"
                   className="flex-1 bg-transparent text-[14px] outline-none"
                   style={{ color: "var(--parch)", fontFamily: "var(--font-sans)" }}
                   aria-label="Search commands"
@@ -166,10 +166,10 @@ export function CommandMenu() {
 
               {/* Footer */}
               <div className="flex items-center gap-4 px-5 py-3" style={{ borderTop: "1px solid var(--line)" }}>
-                <span className="text-[10px]" style={{ color: "var(--muted)" }}><kbd>↑↓</kbd> navigate</span>
-                <span className="text-[10px]" style={{ color: "var(--muted)" }}><kbd>↵</kbd> select</span>
+                <span className="text-[10px]" style={{ color: "var(--muted)" }}><kbd>â†‘â†“</kbd> navigate</span>
+                <span className="text-[10px]" style={{ color: "var(--muted)" }}><kbd>â†µ</kbd> select</span>
                 <span className="text-[10px]" style={{ color: "var(--muted)" }}><kbd>esc</kbd> close</span>
-                <span className="ml-auto text-[10px] font-bold tracking-[0.14em] uppercase" style={{ color: "var(--gold)" }}>⌘K</span>
+                <span className="ml-auto text-[10px] font-bold tracking-[0.14em] uppercase" style={{ color: "var(--gold)" }}>âŒ˜K</span>
               </div>
             </div>
           </motion.div>
@@ -178,3 +178,4 @@ export function CommandMenu() {
     </AnimatePresence>
   );
 }
+
