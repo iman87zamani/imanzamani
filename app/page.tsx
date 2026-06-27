@@ -1,11 +1,11 @@
-import { Navigation } from "@/components/layout/Navigation";
+﻿import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { PageOrchestrator } from "@/components/sections/PageOrchestrator";
 import { BoardBrief } from "@/components/sections/BoardBrief";
 import { ExecutivePOV } from "@/components/sections/ExecutivePOV";
 import { CaseStudies } from "@/components/sections/CaseStudies";
 import { ExecutiveStory } from "@/components/sections/ExecutiveStory";
-import { ThoughtLeadership } from "@/components/sections/ThoughtLeadership";
+
 import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -26,10 +26,11 @@ export default function Home() {
         <ExecutivePOV />
         <CaseStudies />
         <ExecutiveStory />
-        <ThoughtLeadership />
+        
         <ContactSection />
       </main>
       <Footer />
     </>
   );
 }
+
