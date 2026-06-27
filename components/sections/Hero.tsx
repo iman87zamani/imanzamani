@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -28,9 +28,9 @@ export function Hero({ isReady }: HeroProps) {
     <section
       id="home"
       className="relative min-h-screen grid grid-cols-[55%_45%] max-lg:grid-cols-1 overflow-hidden"
-      aria-label="Iman Zamani — Technology Operations & Transformation Executive"
+      aria-label="Iman Zamani â€” Technology Operations & Transformation Executive"
     >
-      {/* ── Copy column ─────────────────────────────── */}
+      {/* â”€â”€ Copy column â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="relative z-10 flex flex-col justify-end px-20 pb-28 pt-36 max-xl:px-14 max-lg:order-2 max-lg:px-8 max-lg:pb-16 max-lg:pt-6">
         <motion.div variants={container} initial="hidden" animate={isReady ? "show" : "hidden"}>
 
@@ -46,11 +46,11 @@ export function Hero({ isReady }: HeroProps) {
             </p>
           </motion.div>
 
-          {/* Governing worldview — the headline that earns authority */}
+          {/* Governing worldview â€” the headline that earns authority */}
           <motion.h1
             variants={up}
             className="font-serif font-light"
-            style={{ fontSize: "clamp(46px,5.6vw,84px)", lineHeight: 1.01, letterSpacing: "-0.025em", color: "var(--parch)" }}
+            style={{ fontSize: "clamp(46px,5.6vw,84px)", lineHeight: 1.05, letterSpacing: "-0.025em", color: "var(--parch)" }}
           >
             <span className="block">{HERO.worldview}</span>
             <em
@@ -66,7 +66,7 @@ export function Hero({ isReady }: HeroProps) {
             <GoldRule />
           </motion.div>
 
-          {/* Thesis — one clear paragraph about the work */}
+          {/* Thesis â€” one clear paragraph about the work */}
           <motion.p
             variants={up}
             className="font-serif italic font-light mb-14"
@@ -103,7 +103,7 @@ export function Hero({ isReady }: HeroProps) {
             ))}
           </motion.div>
 
-          {/* CTAs — specific, directional */}
+          {/* CTAs â€” specific, directional */}
           <motion.div variants={up} className="flex gap-4 flex-wrap">
             <button
               onClick={() => scrollTo("brief")}
@@ -127,7 +127,7 @@ export function Hero({ isReady }: HeroProps) {
         </motion.div>
       </div>
 
-      {/* ── Editorial portrait ───────────────────────── */}
+      {/* â”€â”€ Editorial portrait â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div
         className="relative overflow-hidden max-lg:h-[58vh] max-lg:order-1"
         aria-hidden="true"
@@ -144,7 +144,7 @@ export function Hero({ isReady }: HeroProps) {
           onLoad={e => { (e.target as HTMLImageElement).style.transform = "scale(1)"; }}
         />
 
-        {/* Gradient — seamless bleed from photo into dark background */}
+        {/* Gradient â€” seamless bleed from photo into dark background */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -171,3 +171,4 @@ export function Hero({ isReady }: HeroProps) {
     </section>
   );
 }
+
