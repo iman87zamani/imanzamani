@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -54,13 +54,13 @@ export function ThoughtLeadership() {
           </RevealOnScroll>
           <RevealOnScroll delay={0.15}>
             <p style={{ fontSize: "17px", lineHeight: 1.82, color: "var(--muted)" }}>
-              A practitioner's perspective on technology leadership — written for the executives who understand that the organizational questions are harder than the technology questions.
+              A practitioner's perspective on technology leadership â€” written for the executives who understand that the organizational questions are harder than the technology questions.
             </p>
           </RevealOnScroll>
         </div>
 
         {/* Filter bar */}
-        <div className="flex flex-wrap gap-2 mb-12" role="group" aria-label="Filter articles">
+        <div className="flex flex-wrap gap-2 mb-12" role="group" aria-label="Filter articles" className="flex flex-wrap gap-2 mb-12">
           {FILTERS.map(f => (
             <button
               key={f}
@@ -86,7 +86,7 @@ export function ThoughtLeadership() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-            {/* Featured article — full width */}
+            {/* Featured article â€” full width */}
             {featured && (
               <a
                 href={featured.href}
@@ -172,7 +172,7 @@ export function ThoughtLeadership() {
               </a>
             )}
 
-            {/* Remaining articles — 3-col grid */}
+            {/* Remaining articles â€” 3-col grid */}
             {rest.length > 0 && (
               <div
                 className="grid grid-cols-3 gap-px max-lg:grid-cols-2 max-sm:grid-cols-1"
@@ -192,7 +192,7 @@ export function ThoughtLeadership() {
                     layout
                     aria-label={article.headline}
                   >
-                    {/* Top accent — appears on hover */}
+                    {/* Top accent â€” appears on hover */}
                     <div
                       className="absolute top-0 left-0 right-0 h-px origin-left transition-transform duration-500 group-hover:scale-x-100 scale-x-0"
                       style={{ background: "linear-gradient(90deg,var(--gold),transparent)" }}
@@ -256,6 +256,7 @@ export function ThoughtLeadership() {
     </section>
   );
 }
+
 
 
 
