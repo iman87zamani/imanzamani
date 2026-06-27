@@ -180,7 +180,7 @@ export function ContactSection() {
                         fontStyle: "italic",
                       }}
                       onFocus={e  => { e.target.style.borderColor = "var(--gold)"; }}
-                      onBlur={e   => { e.target.style.borderColor = errors[field] ? "rgba(220,80,80,0.45)" : "var(--line-md)"; }}
+                      
                       aria-required={m.required}
                       aria-invalid={!!errors[field]}
                       aria-describedby={errors[field] ? `${field}-err` : undefined}
@@ -257,3 +257,4 @@ export function ContactSection() {
     </section>
   );
 }
+
