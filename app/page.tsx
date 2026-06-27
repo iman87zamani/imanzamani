@@ -1,4 +1,5 @@
-﻿import { ThoughtLeadership } from "@/components/sections/ThoughtLeadership";
+﻿"use client";
+import { ThoughtLeadership } from "@/components/sections/ThoughtLeadership";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { PageOrchestrator } from "@/components/sections/PageOrchestrator";
@@ -34,5 +35,6 @@ export default function Home() {
     </>
   );
 }
+
 
 

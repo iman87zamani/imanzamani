@@ -1,3 +1,4 @@
+﻿"use client";
 import Link from "next/link";
 import { Linkedin, Mail, FileText } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
@@ -28,7 +29,7 @@ export function Footer() {
                 Iman Zamani
               </p>
               <p className="text-[11px]" style={{ color: "var(--muted)" }}>
-                Dallas–Fort Worth, Texas
+                Dallasâ€“Fort Worth, Texas
               </p>
             </div>
           </div>
@@ -42,7 +43,7 @@ export function Footer() {
             Iman Zamani
           </span>
           <p className="text-[11px] tracking-[0.05em]" style={{ color: "var(--muted)" }}>
-            © {year} Iman Zamani &nbsp;·&nbsp; Dallas–Fort Worth, TX
+            Â© {year} Iman Zamani &nbsp;Â·&nbsp; Dallasâ€“Fort Worth, TX
           </p>
           <div className="flex items-center gap-5">
             <a
@@ -75,9 +76,9 @@ export function Footer() {
               style={{ color: "var(--muted)" }}
               onMouseEnter={e => (e.currentTarget.style.color = "var(--gold)")}
               onMouseLeave={e => (e.currentTarget.style.color = "var(--muted)")}
-              aria-label="Download résumé PDF"
+              aria-label="Download rÃ©sumÃ© PDF"
             >
-              Résumé
+              RÃ©sumÃ©
             </a>
           </div>
         </div>
@@ -85,3 +86,4 @@ export function Footer() {
     </footer>
   );
 }
+
