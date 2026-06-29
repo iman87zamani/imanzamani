@@ -12,7 +12,8 @@ export const SITE_CONFIG = {
 
 // ─── NAV ──────────────────────────────────────────────────
 export const NAV_LINKS = [
-  { label: "The Brief",    href: "#brief"    },
+  { label: "Framework", href: "/framework" },
+{ label: "The Brief",    href: "#brief"    },
   { label: "Point of View",href: "#pov"      },
   { label: "Case Studies", href: "#cases"    },
   { label: "Perspective",  href: "#story"    },
